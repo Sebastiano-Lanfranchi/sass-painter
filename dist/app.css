@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F3F3;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.logoNav {
+  vertical-align: middle;
+}
+
+.header {
+  width: 100vw;
+  height: 100px;
+  background-color: #101010;
+}
+.header-navbar1 {
+  height: 30px;
+  width: 1600px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-navbar1 * li {
+  display: inline-block;
+  color: #D2D2D2;
+}
+.header-navbar1 * i {
+  color: #009CFF;
+}
+.header-navbar2 {
+  height: 30px;
+  width: 1600px;
+  display: flex;
+  justify-content: space-around;
+}
+.header-navbar2 * li {
+  padding: 10px;
+  display: inline-block;
+  color: #D2D2D2;
+}
+.header-navbar2 * li :hover {
+  color: #101010;
+  background-color: #D2D2D2;
+}
+
+.info-row {
+  width: 1800px;
+  height: 500px;
+  background-image: url(../img/hero-pe-8.jpg);
+  display: flex;
+  justify-content: center;
+}
+.info-row .box1-logo {
+  width: 25%;
+  height: 500px;
+}
+.info-row .box2-info {
+  width: 25%;
+  height: 500px;
+  padding-top: 50px;
+  margin-left: 200px;
+}
+.info-row .box2-info h2 {
+  font-size: 40px;
+}
+.info-row .box2-info .newFont {
+  font-style: italic;
+  color: #CE61B2;
+}
+.info-row .box2-info h3 {
+  font-weight: lighter;
+  font-size: 25px;
+}
+.info-row .box2-info ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+.info-row .box2-info li {
+  padding-top: 15px;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.info-row .box2-info li :before {
+  color: #101010;
+  content: ">";
+  position: absolute;
+  left: 0;
+}
+.info-row .box2-info .buttonDownload {
+  height: 50px;
+  width: 250px;
+  border: 1px #101010 solid;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.info-row .box2-info .buttonDownload div {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.info-row .box2-info .buttonDownload i {
+  line-height: 50px;
+  padding-right: 10px;
+}
+.info-row .box3-info {
+  margin-top: 20px;
+  width: 25%;
+  height: 480px;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+.info-row .box3-info .priceLeft {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.info-row .box3-info h2 {
+  color: #FFE9BC;
+}
+.info-row .box3-info span {
+  margin-top: 10px;
+  color: #D2D2D2;
+}
+.info-row .box3-info .buttonBuy {
+  margin-top: 30px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFE9BC;
+  background-color: #009CFF;
+}
+
+.row-info-nav {
+  height: 60px;
+  width: 100vw;
+  margin-top: 10px;
+  background-color: #E6E6E6;
+}
+.row-info-nav ul {
+  width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.row-info-nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,187 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F3F3F3;
+}
+
+.container{
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.logoNav{
+  vertical-align: middle;
+}
+
+// HEADER
+
+@import "color.scss";
+.header{
+  width: 100vw;
+  height: 100px;
+  background-color:$backgroudFontBodyColor;
+
+  &-navbar1{
+    height: 30px;
+    width: 1600px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    *li{
+      display: inline-block;
+      color: $navBar1Color;
+    }
+    *i{
+      color: $iconsColor;
+    }
+  }
+    &-navbar2{
+      height: 30px;
+      width: 1600px;
+      display: flex;
+      justify-content: space-around;
+
+      *li{
+        padding: 10px;
+        display: inline-block;
+        color: $navBar1Color;
+
+        :hover{
+          color: $backgroudFontBodyColor;
+          background-color: $navBar1Color;
+        }
+      }
+  }
+}
+
+// MAIN
+
+.info-row{
+  width: 1800px;
+  height: 500px;
+  background-image: url(../img/hero-pe-8.jpg);
+  display: flex;
+  justify-content: center;
+
+
+  .box1-logo{
+    width: 25%;
+    height: 500px;
+  }
+  .box2-info{
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+    margin-left: 200px;
+
+    h2{
+      font-size: 40px;
+    }
+
+    .newFont{
+      @include newFont;
+    }
+
+    h3{
+      font-weight: lighter;
+      font-size: 25px;
+    }
+
+    ul{
+      position: relative;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 1em;
+    }
+
+    li{
+      padding-top: 15px;
+      font-weight: lighter;
+      font-size: 20px;
+
+      :before{
+        color: $backgroudFontBodyColor;
+        content: ">";
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    .buttonDownload{
+      height: 50px;
+      width: 250px;
+      border: 1px $backgroudFontBodyColor solid;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+
+      div{
+        padding-top: 5px;
+        padding-left: 10px;
+      }
+
+      i{
+        line-height: 50px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .box3-info{
+    margin-top: 20px;
+    width: 25%;
+    height: 480px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+
+    .priceLeft{
+      margin-top: 50px;
+      margin-left: 10px;
+    }
+
+    h2{
+      color: $box3-info-fontColor;
+    }
+
+    span{
+      margin-top: 10px;
+      color: $navBar1Color;
+    }
+
+    .buttonBuy{
+      margin-top: 30px;
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: $box3-info-fontColor;
+      background-color: $iconsColor;
+    }
+  }
+}
+.row-info-nav{
+  height: 60px;
+  width: 100vw;
+  margin-top: 10px;
+  background-color: $navInfoColor;
+
+  ul{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  li{
+   display: inline-block;
+   font-size: 20px;
+   padding: 10px;
+
+  }
+}

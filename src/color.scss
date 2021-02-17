@@ -1,0 +1,10 @@
+// header
+$backgroudFontBodyColor: #101010;
+$iconsColor: #009CFF;
+$navBar1Color: #D2D2D2;
+$box3-info-fontColor: #FFE9BC;
+$navInfoColor: #E6E6E6;
+@mixin newFont {
+  font-style: italic;
+  color: #CE61B2;
+}
